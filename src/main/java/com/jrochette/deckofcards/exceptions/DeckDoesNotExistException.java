@@ -1,4 +1,4 @@
-package com.jrochette.deckofcards.cards.exceptions;
+package com.jrochette.deckofcards.exceptions;
 
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;

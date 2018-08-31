@@ -4,6 +4,7 @@ import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.context.*;
 import org.springframework.context.annotation.*;
+import com.jrochette.deckofcards.cards.*;
 import com.jrochette.deckofcards.repository.*;
 
 @SpringBootApplication
@@ -16,5 +17,10 @@ public class Application {
   @Bean
   public DeckRepository deckRepository(ApplicationContext ctx) {
     return new InMemoryDeckRepository();
+  }
+
+  @Bean
+  public DeckBuilder deckBuilder(ApplicationContext ctx) {
+    return new DeckBuilder();
   }
 }
